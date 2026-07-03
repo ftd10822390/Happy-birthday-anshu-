@@ -1,43 +1,54 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🎉 Happy Birthday Anshu ❤️</title>
+<title>Happy Birthday Anshu ❤️</title>
 
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
 </head>
 
 <body>
 
-<h1>🎉 Happy Birthday Anshu ❤️ 🎂</h1>
+<div class="overlay">
 
-<p>✨ 3 July ✨</p>
+<h1 id="typing"></h1>
 
-<button onclick="startSurprise()">🎁 Open Surprise</button>
+<p class="date">✨ 3 July ✨</p>
 
-<div id="message" style="display:none;">
+<button onclick="startSurprise()">🎁 Open Your Surprise</button>
 
-<h2>💖 Happy Birthday, Anshu! 💖</h2>
+<div id="message">
+
+<div class="card">
+
+<img src="Screenshot_20260703-154006.png" class="photo">
+
+<h2>Happy Birthday Anshu ❤️</h2>
 
 <p>
-Today is your special day! 🥳<br><br>
+May your smile always stay this beautiful.
+May every dream come true.
+May happiness follow you wherever you go.
 
-May your life always be filled with happiness, love,
-success and beautiful memories.<br><br>
-
-Keep smiling, keep shining and may all your dreams
-come true. ✨💖<br><br>
-
-Have an amazing birthday! 🎂🎉
+Happy Birthday! 🎂🎉💖
 </p>
 
-<img src="Screenshot_20260703-154006.png" width="300">
+<img src="Screenshot_20260703-154128.png" class="photo">
 
-<br><br>
+</div>
 
-<img src="Screenshot_20260703-154128.png" width="300">
+</div>
+
+<audio id="music" loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
 
 </div>
 
