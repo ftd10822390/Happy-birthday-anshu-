@@ -1,23 +1,20 @@
-function startMusic() {
+document.getElementById("btn").addEventListener("click", function () {
 
-    let music = document.getElementById("bgMusic");
+    // show message
+    document.getElementById("msg").style.display = "block";
 
-    if (!music) {
-        alert("Music not found!");
-        return;
-    }
+    // play music
+    let music = document.getElementById("music");
 
     music.currentTime = 0;
-    music.volume = 1;
 
     let playPromise = music.play();
 
     if (playPromise !== undefined) {
-        playPromise.then(() => {
-            console.log("Music started");
-        }).catch(err => {
-            console.log("Blocked:", err);
-            alert("Tap again to enable sound 🔊");
+        playPromise.catch(err => {
+            console.log("Music blocked:", err);
+            alert("🔊 Tap again for sound");
         });
     }
-}
+
+});
