@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Happy Birthday Anshu ❤️</title>
-
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,31 +13,28 @@
 
 <h1>🎂 Happy Birthday Anshu ❤️</h1>
 
-<p>✨ Wishing you happiness & success ✨</p>
+<p class="wish">✨ Wishing you happiness, love & success ✨</p>
 
-<!-- 🎉 BUTTON -->
-<button onclick="startMusic()">🎉 Open Surprise 🎉</button>
+<!-- 🎁 BUTTON -->
+<button id="btn">🎉 Open Surprise 🎉</button>
 
-<!-- 💖 SURPRISE MESSAGE -->
-<div id="message" style="display:none;">
-    
-    <h2>💌 Special Wish 💌</h2>
+<!-- 💌 MESSAGE -->
+<div id="msg" class="card">
+
+    <h2>💖 Special Birthday Wish 💖</h2>
 
     <p>
-    Happy Birthday Anshu 🎂❤️<br><br>
-    You are special ✨<br>
-    May your life always shine 💖
+    Happy Birthday Anshu 🎂❤️<br>
+    Stay always happy and blessed ✨
     </p>
 
-    <!-- 📸 IMAGES -->
-    <img src="Screenshot_20260703-154006.png" width="250">
-    <br><br>
-    <img src="Screenshot_20260703-154128.png" width="250">
+    <img src="Screenshot_20260703-154006.png" class="img">
+    <img src="Screenshot_20260703-154128.png" class="img">
 
 </div>
 
 <!-- 🎵 MUSIC -->
-<audio id="bgMusic" loop>
+<audio id="music">
   <source src="music.mp3" type="audio/mpeg">
 </audio>
 
