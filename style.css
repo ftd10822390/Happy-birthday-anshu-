@@ -3,22 +3,33 @@ margin:0;
 padding:0;
 font-family:Arial;
 background:linear-gradient(135deg,#ff4d6d,#9b5de5);
-text-align:center;
 color:white;
+height:100vh;
+
+/* ⭐ MAIN FIX (CENTER ALIGN) */
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
 }
 
 button{
 padding:12px 25px;
 font-size:18px;
 border:none;
-border-radius:20px;
+border-radius:25px;
 background:white;
 color:#ff4d6d;
-margin-top:30px;
 cursor:pointer;
+margin-bottom:20px;
 }
 
 img{
-margin-top:10px;
+width:250px;
 border-radius:10px;
+margin-top:10px;
+}
+
+#message{
+margin-top:20px;
 }
