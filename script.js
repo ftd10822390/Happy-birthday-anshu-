@@ -1,31 +1,11 @@
-let musicStarted = false;
+document.getElementById("startBtn").onclick = function () {
 
-document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("message").style.display = "block";
 
-    let btn = document.getElementById("startBtn");
+    this.style.display = "none";
 
-    btn.addEventListener("click", function () {
+    let music = document.getElementById("bgMusic");
 
-        // 🎵 MUSIC START
-        let music = document.getElementById("bgMusic");
+    music.play().catch(err => console.log(err));
 
-        if (music && !musicStarted) {
-            music.play().then(() => {
-                musicStarted = true;
-            }).catch(err => {
-                console.log("Music error:", err);
-            });
-        }
-
-        // 🎉 SHOW CONTENT
-        let msg = document.getElementById("message");
-        if (msg) {
-            msg.style.display = "block";
-        }
-
-        // 🎈 HIDE BUTTON
-        btn.style.display = "none";
-
-    });
-
-});
+};
