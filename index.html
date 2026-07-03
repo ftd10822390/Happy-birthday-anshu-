@@ -2,36 +2,54 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Happy Birthday Anshu ❤️</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
 </head>
 
 <body>
 
-<button id="startBtn">🎉 Open Surprise 🎉</button>
+<div class="overlay">
 
-<h1>Happy Birthday Anshu 🎂❤️</h1>
+<h1 id="typing"></h1>
 
-<p>✨ 3 July Special ✨</p>
+<p class="date">✨ 3 July ✨</p>
 
-<div id="message" style="display:none;">
+<button onclick="startSurprise()">🎁 Open Your Surprise</button>
 
-<h2>💖 Happy Birthday Anshu 💖</h2>
+<div id="message">
+
+<div class="card">
+
+<img src="Screenshot_20260703-154006.png" class="photo">
+
+<h2>Happy Birthday Anshu ❤️</h2>
 
 <p>
-Wishing you happiness, love and success ✨<br>
-Stay always smiling 😊
+May your smile always stay this beautiful.
+May every dream come true.
+May happiness follow you wherever you go.
+
+Happy Birthday! 🎂🎉💖
 </p>
 
-<img src="Screenshot_20260703-154006.png" width="250">
-<br><br>
-<img src="Screenshot_20260703-154128.png" width="250">
+<img src="Screenshot_20260703-154128.png" class="photo">
 
 </div>
 
-<audio id="bgMusic" loop>
-  <source src="music.mp3" type="audio/mpeg">
+</div>
+
+<audio id="bgmusic" loop>
+<source src="music.mp3" type="audio/mpeg">
 </audio>
+
+</div>
 
 <script src="script.js"></script>
 
